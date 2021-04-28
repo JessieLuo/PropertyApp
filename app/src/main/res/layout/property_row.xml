@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/propertyImageView"
+        android:layout_width="415dp"
+        android:layout_height="151dp"
+        android:layout_marginBottom="3dp"
+        app:layout_constraintBottom_toTopOf="@+id/addressTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/addressTextView"
+        android:layout_width="412dp"
+        android:layout_height="77dp"
+        android:text="Address"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/propertyImageView" />
+
+    <TextView
+        android:id="@+id/rentTextView"
+        android:layout_width="413dp"
+        android:layout_height="72dp"
+        android:text="Rent"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/bedTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addressTextView" />
+
+    <TextView
+        android:id="@+id/bedTextView"
+        android:layout_width="107dp"
+        android:layout_height="44dp"
+        android:text="BedRoom"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/bathTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rentTextView" />
+
+    <TextView
+        android:id="@+id/bathTextView"
+        android:layout_width="127dp"
+        android:layout_height="44dp"
+        android:text="BathRoom"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/carTextView"
+        app:layout_constraintStart_toEndOf="@+id/bedTextView"
+        app:layout_constraintTop_toBottomOf="@+id/rentTextView" />
+
+    <TextView
+        android:id="@+id/carTextView"
+        android:layout_width="170dp"
+        android:layout_height="42dp"
+        android:text="CarPark"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rentTextView" />
+</androidx.constraintlayout.widget.ConstraintLayout>
